@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-f_02erc7b%n25udn1)sylck4t@#b8b*(qoz8emwjh55qx_8oso
 DEBUG = True
 
 ALLOWED_HOSTS = []
-
+AUTH_USER_MODEL = 'hrsystem.Employee'
 
 # Application definition
 
@@ -37,6 +37,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'hrsystem',
+    'rest_framework'
 ]
 
 MIDDLEWARE = [
